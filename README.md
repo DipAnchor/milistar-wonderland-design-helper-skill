@@ -21,8 +21,10 @@ milistar-wonderland-design-helper/
 ├── README.md                         # 本文件
 └── references/
     ├── sources.md                    # 信息来源与检索指南（含无头浏览器操作流程）
-    ├── boundaries.md                 # 已知能力边界与限制
     └── milistar-updatelog.md         # 月之三~月之七版本更新记录
+
+> 另有 miliastra-knowledge Skill（skillhub 市场 `miliastra-toolbox` v1.0.3）
+> 作为专用知识库 API 数据源，通过 `https://ugc.070077.xyz/` 提供节点/文档查询。
 ```
 
 ## 使用场景
@@ -38,6 +40,7 @@ milistar-wonderland-design-helper/
 
 | 来源 | 用途 |
 |------|------|
+| miliastra-knowledge API | 专用千星沙箱知识库查询（节点说明/文档/语义检索），优先于浏览器搜索使用 |
 | 米游社官方综合指南 | 最新编辑器官网文档（无头浏览器实时检索） |
 | B站搜索 API | 社区视频教程与实机案例 |
 | 米游社千星奇域专区 | 社区讨论与作品分享 |
@@ -45,6 +48,8 @@ milistar-wonderland-design-helper/
 | 本地更新日志 | 月之三~月之七版本变更汇总 |
 
 ## 前置依赖
+
+本 Skill 配套使用 **miliastra-knowledge** 知识库 API（来自 skillhub 市场 `miliastra-toolbox` v1.0.3），无需额外安装即可查询千星沙箱节点与文档。
 
 使用无头浏览器搜索米游社功能需要安装 `agent-browser`：
 
@@ -64,3 +69,5 @@ agent-browser install  # 下载 Chromium
 - 社区发现新的实现技巧
 
 更新时主要关注 官方更新公告和社区教程新发现。
+
+能力验证优先调用 miliastra-knowledge 知识库 API 查证，其次搜索社区和官网。
