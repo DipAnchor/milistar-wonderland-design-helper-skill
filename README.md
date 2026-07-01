@@ -20,12 +20,9 @@ milistar-wonderland-design-helper/
 ├── SKILL.md                          # 技能主文件：玩法可行性判定流程
 ├── README.md                         # 本文件
 └── references/
-    ├── sources.md                    # 信息来源与检索指南（含无头浏览器操作流程）
+    ├── sources.md                    # 检索与查询指南（含各 API 接口说明与优先级）
     ├── milistar-updatelog.md         # 月之三~月之八版本更新记录
     └── milistar-index/               # 综合指南本地索引（catalog.json + textMap.json）
-
-> 另有 miliastra-knowledge Skill（skillhub 市场 `miliastra-toolbox` v1.0.3）
-> 作为专用知识库 API 数据源，通过 `https://ugc.070077.xyz/` 提供节点/文档查询。
 ```
 
 ## 使用场景
@@ -37,30 +34,25 @@ milistar-wonderland-design-helper/
 - 「千星沙箱编辑器支持XX功能吗？」
 - 「XX机制有没有社区实现案例？」
 
-## 数据来源
+## 数据来源优先级
 
-| 来源 | 用途 |
-|------|------|
-| 本地综合指南索引（references/milistar-index/） | 目录+章节全文，本地快速检索官方综合指南，优先于在线搜索源 |
-| miliastra-knowledge API | 专用千星沙箱知识库查询（节点说明/文档/语义检索） |
-| 米游社官方综合指南 | 最新编辑器官网文档（无头浏览器实时检索） |
-| B站搜索 API | 社区视频教程与实机案例 |
-| 米游社千星奇域专区 | 社区讨论与作品分享 |
-| BWIKI | 系统数据百科 |
-| 本地更新日志 | 月之三~月之八版本变更汇总 |
+完整检索接口与说明详见 [`references/sources.md`](references/sources.md)，检索优先级从高到低：
+
+| 优先级 | 来源 | 说明 |
+|--------|------|------|
+| ⭐1 | **知识库 API — SVG 图表检索** | 查组件配置图、参数枚举、操作步骤。端点 `https://ugc.070077.xyz/api/v1/svg/search` |
+| ⭐2 | **知识库 API — Skill 工具** | `get_node_info`/`list_documents`/`get_document`/`rag_search`，查节点/文档/语义 |
+| 3 | **知识库 API — 结构化数据** | 查物件、特效、音乐信息 |
+| 4 | **知识库 API — 术语翻译** | 查 15 国翻译 |
+| 5 | **知识库 API — 社区笔记** | 查社区笔记 |
+| 6 | **官方综合指南** | 本地索引或内容文件直读 |
+| 7 | **网页搜索** | B站、米游社、BWIKI、通用搜索（兜底） |
+
+知识库 API 端点：`https://ugc.070077.xyz/`，PAI Skill 注册名：`miliastra-knowledge`。
 
 ## 前置依赖
 
-本 Skill 配套使用 **miliastra-knowledge** 知识库 API（来自 skillhub 市场 `miliastra-toolbox` v1.0.3），无需额外安装即可查询千星沙箱节点与文档。
-
-使用无头浏览器搜索米游社功能需要安装 `agent-browser`：
-
-```bash
-npm install -g agent-browser
-agent-browser install  # 下载 Chromium
-```
-
-若环境无无头浏览器，仍可通过用户导出的 MHTML 文件获取官方文档内容。
+本 Skill 配套使用 **miliastra-knowledge** 知识库 API（来自 skillhub 市场 `miliastra-toolbox`），无需额外配置即可查询千星沙箱节点、文档与编辑器图示。
 
 ## 维护说明
 
