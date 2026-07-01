@@ -21,7 +21,8 @@ milistar-wonderland-design-helper/
 ├── README.md                         # 本文件
 └── references/
     ├── sources.md                    # 信息来源与检索指南（含无头浏览器操作流程）
-    └── milistar-updatelog.md         # 月之三~月之七版本更新记录
+    ├── milistar-updatelog.md         # 月之三~月之八版本更新记录
+    └── milistar-index/               # 综合指南本地索引（catalog.json + textMap.json）
 
 > 另有 miliastra-knowledge Skill（skillhub 市场 `miliastra-toolbox` v1.0.3）
 > 作为专用知识库 API 数据源，通过 `https://ugc.070077.xyz/` 提供节点/文档查询。
@@ -40,12 +41,13 @@ milistar-wonderland-design-helper/
 
 | 来源 | 用途 |
 |------|------|
-| miliastra-knowledge API | 专用千星沙箱知识库查询（节点说明/文档/语义检索），优先于浏览器搜索使用 |
+| 本地综合指南索引（references/milistar-index/） | 目录+章节全文，本地快速检索官方综合指南，优先于在线搜索源 |
+| miliastra-knowledge API | 专用千星沙箱知识库查询（节点说明/文档/语义检索） |
 | 米游社官方综合指南 | 最新编辑器官网文档（无头浏览器实时检索） |
 | B站搜索 API | 社区视频教程与实机案例 |
 | 米游社千星奇域专区 | 社区讨论与作品分享 |
 | BWIKI | 系统数据百科 |
-| 本地更新日志 | 月之三~月之七版本变更汇总 |
+| 本地更新日志 | 月之三~月之八版本变更汇总 |
 
 ## 前置依赖
 

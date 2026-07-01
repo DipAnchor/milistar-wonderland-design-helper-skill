@@ -1,7 +1,48 @@
 # 千星奇域 · 综合指南更新日志
 
 > 来源：[https://act.mihoyo.com/ys/ugc/tutorial/detail/mhs2w008wf14](https://act.mihoyo.com/ys/ugc/tutorial/detail/mhs2w008wf14)
-> 导出日期：2026-05-30
+> 导出日期：2026-07-01
+
+---
+
+## 月之八版本 — 2026/07/01
+
+### 一、内容新增
+
+本次更新新增章节如下：
+
+**1. 载具系统相关**
+- 操控运动器
+- 角色操控技能
+
+**2. 技能预瞄准相关**
+- 技能预瞄准
+
+**3. 常驻光标相关**
+- 光标碰撞盒
+
+**4. 外围系统相关**
+- 先行体验（抢先体验发布）
+- 奇匠订阅
+
+**5. 物件相关**
+- 白盒物件
+
+**6. 辅助编辑功能相关**
+- 编辑工具
+
+### 二、内容修改
+
+1. **载具系统** — 主镜头中增加了物件镜头相关的描述 → [主镜头](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhfua005zpeg)
+2. **常驻光标** — 玩家中增加了常驻光标的介绍 → [玩家](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhctmgi51lpo)
+3. **物件换色** — 模型中介绍了物件换色功能 → [模型](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhrutdio6904)
+4. **模型可视范围与精度** — 负载优化中介绍了相关内容 → [负载优化](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhlb1vivioys)
+5. **职业组件** — 职业新增组件作为可添加数据 → [职业](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhXXXXX)
+6. **节点相关** — 新增了对应功能相关的节点介绍 → [节点介绍](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhsok60iqlxk)、[节点图](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhjwjrr5n73i)
+7. **附录**
+   - 新增月之八版本经典模式角色编号 → [经典模式角色编号一览](https://act.mihoyo.com/ys/ugc/tutorial//detail/mh4imrrhzdzi)
+   - 新增部分单位状态 → [单位状态效果池](https://act.mihoyo.com/ys/ugc/tutorial//detail/mhou93r2pxv2)
+8. **其它修改** — 勘误，补充：特殊数字控件
 
 ---
 
